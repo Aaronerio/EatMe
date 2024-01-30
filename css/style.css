@@ -205,6 +205,7 @@ ul {
     width: 270px;
     box-sizing: border-box;
     border: 2px transparent solid;
+    transition: 0.4s;
 }
 
 .advantage:hover {
@@ -228,6 +229,10 @@ ul {
     font-weight: 400;
     font-family: "Roboto";
     margin: 0;
+}
+
+.advantage img {
+    transition: 0.4s;
 }
 
 .advantage:hover img {
@@ -411,4 +416,100 @@ ul {
 
 .reviews a:hover {
     background-color: #f5ed07;
+}
+
+.map {
+    overflow: hidden;
+    height: 500px;
+    position: relative;
+}
+
+.map iframe {
+    height: 567px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -67px;
+}
+
+.map_info {
+    position: absolute;
+    left: 600px;
+    top: 170px;
+    background-color: #151517;
+    border-radius: 8px;
+    padding: 30px 50px 27px 35px;
+}
+
+.map_info::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    rotate: 45deg;
+    left: calc(50% - 5px);
+    bottom: -5px;
+    background-color: #151517;
+}
+
+.map_info p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.map_info a {
+    display: block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #f5ed08;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-top: 10px;
+}
+
+.map_info a:hover {
+    text-decoration: underline;
+}
+
+.map_info p::before {
+    content: "";
+    display: inline-block;
+    width: 12px;
+    height: 17px;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-image: url(../images/misto.png);
+}
+
+.phone::before {
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 14px;
+    margin-right: 17px;
+    background-repeat: no-repeat;
+    background-image: url(../images/phone.png);
+}
+
+.email::before {
+    content: "";
+    display: inline-block;
+    width: 17px;
+    height: 12px;
+    margin-right: 17px;
+    background-repeat: no-repeat;
+    background-image: url(../images/email.png);
+}
+
+.skypu::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 17px;
+    background-repeat: no-repeat;
+    background-image: url(../images/skypu.png);
 }

@@ -222,7 +222,6 @@ ul {
 
 .advantages p {
     width: 260px;
-    /* height: 64px; */
     font-size: 1.4rem;
     line-height: 21px;
     color: #878787;
@@ -387,7 +386,7 @@ ul {
 }
 
 .name {
-    font-size: 14px;
+    font-size: 1.4rem;
     color: #151517;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -396,7 +395,7 @@ ul {
 }
 
 .role {
-    font-size: 13px;
+    font-size: 1.3rem;
     color: #878787;
     font-weight: 300;
     font-family: "Roboto";
@@ -474,7 +473,8 @@ ul {
     text-decoration: underline;
 }
 
-.map_info p::before {
+.map_info p::before,
+.adress::before {
     content: "";
     display: inline-block;
     width: 12px;
@@ -512,4 +512,102 @@ ul {
     margin-right: 17px;
     background-repeat: no-repeat;
     background-image: url(../images/skypu.png);
+}
+
+.footer {
+    background-color: #151517;
+    padding: 50px 0 60px;
+}
+
+.footer .flex {
+    column-gap: 30px;
+    align-items: flex-start;
+}
+
+.column {
+    width: 270px;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+.footer h3 {
+    color: white;
+}
+
+.footer_logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 3rem;
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+}
+
+.footer_logo p {
+    font-size: 1.3rem;
+    line-height: 24px;
+    color: #878787;
+    font-weight: 300;
+    font-family: "Roboto";
+}
+
+.footer h3 {
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #f1f1f3;
+    font-weight: 700;
+    font-family: "Roboto Slab";
+    margin-bottom: 30px;
+}
+
+.footer_menu a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-family: "Roboto";
+    margin-bottom: 12px;
+}
+
+.footer_menu a:hover {
+    color: #f5ed08;
+}
+
+.footer_contacts p {
+    font-size: 1.4rem;
+    color: #f1f1f3;
+    font-weight: 400;
+    font-family: "Roboto";
+}
+
+.footer_contacts a {
+    font-size: 1.4rem;
+    color: #f1f1f3;
+    font-weight: 400;
+    font-family: "Roboto";
+    text-decoration: none;
+}
+
+.footer_contacts a:hover {
+    text-decoration: underline;
+}
+
+.news input {
+    background-color: #151517;
+    border: 1px solid #878787;
+    border-radius: 5px;
+    padding: 14px;
+    width: 240px;
+    margin-bottom: 26px;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.news .flex {
+    column-gap: 8px;
+    justify-content: start;
 }

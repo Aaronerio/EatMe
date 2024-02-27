@@ -1,5 +1,5 @@
 html {
-    font-size: 10px;
+    font-size: 7px;
     cursor: url(../images/cursor.cur), default;
 }
 
@@ -30,6 +30,45 @@ ul {
     column-gap: 7px;
 }
 
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.hamburger span {
+    position: relative;
+    width: 25px;
+    height: 4px;
+    display: block;
+    top: 12px;
+    background-color: #fff;
+}
+
+.hamburger span::before,
+.hamburger span::after {
+    position: absolute;
+    content: "";
+    width: 25px;
+    height: 4px;
+    right: 0;
+    top: 21px;
+    background-color: #fff;
+}
+
+.hamburger span::before {
+    top: -10px;
+}
+
+.hamburger span::after {
+    top: 10px;
+}
+
+
+.header_menu .flex {
+    justify-content: center;
+}
+
 .header_info {
     background-color: #151517;
     padding: 10px 0 10px 0;
@@ -43,8 +82,12 @@ ul {
     transform: scale(1.3);
 }
 
-.contacts img {
-    margin-left: 13px;
+.contacts {
+    display: none;
+}
+
+.contacts.flex {
+    column-gap: 52px;
 }
 
 .contacts p,
@@ -55,10 +98,34 @@ ul {
     font-weight: 400;
     font-family: "Roboto";
     text-decoration: none;
+    position: relative;
+    margin: 0;
 }
 
 .contacts a:hover {
     text-decoration: underline;
+}
+
+.header_adress::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/miesto.png);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    top: -7px;
+    left: -38px;
+}
+
+.contacts a::before {
+    content: '';
+    position: absolute;
+    background-image: url(../images/iphon.png);
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    top: -7px;
+    left: -38px;
 }
 
 .header_menu .flex .head_menu {
@@ -71,6 +138,10 @@ ul {
     font-weight: 700;
     font-family: "Roboto Slab";
     text-decoration: none;
+}
+
+.head_menu {
+    display: none;
 }
 
 .head_menu a {
@@ -126,8 +197,6 @@ ul {
 }
 
 .soup p {
-    width: 1170px;
-    height: 82px;
     font-size: 1.8rem;
     line-height: 28px;
     color: #ffffff;
@@ -610,4 +679,32 @@ footer h2 {
 .news .flex {
     column-gap: 8px;
     justify-content: start;
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        /* font-size: 8.5px; */
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .contacts {
+        display: flex;
+    }
+
+    .head_menu {
+        display: block;
+    }
+
+    .header_menu .flex {
+        justify-content: space-between;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    html {
+        font-size: 10px;
+    }
 }

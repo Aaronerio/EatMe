@@ -64,6 +64,19 @@ ul {
     top: 10px;
 }
 
+.hamburger_open span {
+    background-color: transparent;
+}
+
+.hamburger_open span::before {
+    transform: rotate(135deg);
+    top: 0;
+}
+
+.hamburger_open span::after {
+    transform: rotate(-135deg);
+    top: 0;
+}
 
 .header_menu .flex {
     justify-content: center;
@@ -140,8 +153,26 @@ ul {
     text-decoration: none;
 }
 
+.header_block {
+    display: block;
+    text-align: center;
+}
+
 .head_menu {
     display: none;
+}
+
+.menu {
+    column-gap: 30px;
+}
+
+.mobile_nav {
+    display: block;
+}
+
+.mobile_nav .flex {
+    flex-direction: column;
+    justify-content: center;
 }
 
 .head_menu a {
@@ -157,9 +188,9 @@ ul {
 
 }
 
-.head_menu li {
+/* .head_menu li {
     margin-left: 30px;
-}
+} */
 
 .head_menu a:after {
     content: '';
@@ -188,12 +219,13 @@ ul {
 .soup h2 {
     font-size: 5rem;
     letter-spacing: 2px;
-    line-height: 60px;
+    line-height: 1.2em;
     text-transform: uppercase;
     color: #ffffff;
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: center;
+    margin-top: 0;
 }
 
 .soup p {
@@ -227,6 +259,11 @@ ul {
 
 .button:hover {
     background-color: white;
+}
+
+.arrowleft,
+.arrowright {
+    display: none;
 }
 
 .arrowleft::before {
@@ -267,6 +304,7 @@ ul {
     text-align: center;
     padding: 60px 0;
     column-gap: 30px;
+    flex-wrap: wrap;
 }
 
 .advantage {
@@ -591,6 +629,7 @@ ul {
 .footer .flex {
     column-gap: 30px;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .column {
@@ -706,5 +745,12 @@ footer h2 {
 @media screen and (min-width: 1200px) {
     html {
         font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .arrowleft,
+    .arrowright {
+        display: inline;
     }
 }

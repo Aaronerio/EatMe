@@ -68,7 +68,13 @@ figure {
     top: 10px;
 }
 
-.hamburger_open span {
+.hamburger:hover span,
+.hamburger:hover span::before,
+.hamburger:hover span::after {
+    background-color: #f5ed07;
+}
+
+.hamburger.hamburger_open span {
     background-color: transparent;
 }
 
@@ -761,6 +767,8 @@ footer h2 {
     }
 
     .header_menu .flex {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
     }
 }

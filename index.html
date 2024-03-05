@@ -39,7 +39,7 @@
                     <div class="logo">
                         <h1><a href="index.html">EatMe</a></h1>
                     </div>
-                    <div class="head_menu">
+                    <nav class="head_menu">
                         <ul class="flex menu">
                             <li><a href="">Головна</a></li>
                             <li><a href="">Категорії</a></li>
@@ -48,13 +48,13 @@
                             <li><a href="">Про нас</a></li>
                             <li><a href="">Контакти</a></li>
                         </ul>
-                    </div>
+                    </nav>
                 </div>
             </div>
         </div>
     </header>
     <main class="main">
-        <div class="soup">
+        <section class="soup">
             <div class="wrapper">
                 <h2>Смачний Фруктовий суп</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatem architecto fuga dicta
@@ -65,33 +65,41 @@
                 <a class="arrowleft" href=""></a>
                 <a class="arrowright" href=""></a>
             </div>
-        </div>
+        </section>
         <div class="wrapper">
             <div class="flex advantages">
-                <div class="advantage">
-                    <img src="images/24h.png" alt="24/7">
-                    <h3>Працюємо 24/7</h3>
-                    <p>Наш сервіз працює цілодобово,
-                        без вихідних днів</p>
-                </div>
-                <div class="advantage delivery">
-                    <img src="images/delivery.png" alt="fast delivery">
-                    <h3>Швидка доставка</h3>
-                    <p>Кур’єр доставить Вам їжу впродовж однієї години</p>
-                </div>
-                <div class="advantage">
-                    <img src="images/quality.png" alt="high quality">
-                    <h3>Гарантована якість</h3>
-                    <p>Наша продукція має найвищий рівень якості ГОСТ-90210</p>
-                </div>
-                <div class="advantage lowprices">
-                    <img src="images/lowprices.png" alt="low prices">
-                    <h3>Низькі ціни</h3>
-                    <p>У нас працює система накопичення балів після кожного замовлення</p>
-                </div>
+                <figure class="advantage">
+                    <figcaption>
+                        <img src="images/24h.png" alt="24/7">
+                        <h3>Працюємо 24/7</h3>
+                        <p>Наш сервіз працює цілодобово,
+                            без вихідних днів</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantage delivery">
+                    <figcaption>
+                        <img src="images/delivery.png" alt="fast delivery">
+                        <h3>Швидка доставка</h3>
+                        <p>Кур’єр доставить Вам їжу впродовж однієї години</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantage">
+                    <figcaption>
+                        <img src="images/quality.png" alt="high quality">
+                        <h3>Гарантована якість</h3>
+                        <p>Наша продукція має найвищий рівень якості ГОСТ-90210</p>
+                    </figcaption>
+                </figure>
+                <figure class="advantage lowprices">
+                    <figcaption>
+                        <img src="images/lowprices.png" alt="low prices">
+                        <h3>Низькі ціни</h3>
+                        <p>У нас працює система накопичення балів після кожного замовлення</p>
+                    </figcaption>
+                </figure>
             </div>
         </div>
-        <div class="about">
+        <section class="about">
             <div class="wrapper">
                 <h2>Про компанію</h2>
                 <p>Насичене томатне пюре, ароматний гострий часник і запашні спеції: мускатний горіх, кориця, гвоздика,
@@ -100,7 +108,7 @@
                     борщ, картопля по-селянськи. Рекомендується додавати соус до м'яса, риби, овочів, макаронних
                     виробів, запіканок і перших страв. </p>
             </div>
-        </div>
+        </section>
         <div class="show_menu">
             <div class="wrapper">
                 <p>Акція! При замовленні двох піц - Pepsi в ПОДАРУНОК! Щонеділі при замовленні двох піц - Pepsi в
@@ -109,15 +117,15 @@
                 <a href="" class="button">Переглянути меню</a>
             </div>
         </div>
-        <div class="dishes">
+        <section class="dishes">
             <div class="wrapper">
                 <h2>Наші популярні страви</h2>
-                <a class="button" href="">Перші блюда</a>
-                <a class="button" href="">Другі блюда</a>
-                <a class="button" href="">Напої</a>
-                <a class="button" href="">Десерт</a>
+                <a class="button first" href="">Перші блюда</a>
+                <a class="button second" href="">Другі блюда</a>
+                <a class="button drinks" href="">Напої</a>
+                <a class="button desert" href="">Десерт</a>
             </div>
-        </div>
+        </section>
         <div class="izha">
             <img src="images/rebra.jpg" alt="жарені ребра">
             <img src="images/salat.jpg" alt="салати">
@@ -130,7 +138,7 @@
                 <a class="button" href="">Показати більше</a>
             </div>
         </div>
-        <div class="reviews">
+        <section class="reviews">
             <div class="wrapper">
                 <h2>Відгуки покупців</h2>
                 <p class="comment">Дуже сподобалася надзвичайно швидка доставка (22 хвилини від прийняття замовлення до
@@ -148,11 +156,11 @@
                 <a href=""></a>
                 <a href=""></a>
             </div>
-        </div>
+        </section>
         <div class="map">
-            <!-- <iframe
+            <iframe
                 src="https://www.google.com/maps/d/u/0/embed?mid=1uIkUmDNCMqE1-v-j-leEkaS2IfLbw8k&ehbc=2E312F">
-            </iframe> -->
+            </iframe>
             <div class="map_info">
                 <p>м. Львів, вул. Стрийська 57</p>
                 <a class="phone" href="tel:+380974567895">+38 (097) 456-78-95</a>
@@ -170,14 +178,16 @@
                 </div>
                 <div class="footer_menu column">
                     <h3>Меню</h3>
-                    <ul>
-                        <li><a href="">Головна</a></li>
-                        <li><a href="">Категорії</a></li>
-                        <li><a href="">Доставка та оплата</a></li>
-                        <li><a href="">Гарантія</a></li>
-                        <li><a href="">Про нас</a></li>
-                        <li><a href="">Контакти</a></li>
-                    </ul>
+                    <nav>
+                        <ul>
+                            <li><a href="">Головна</a></li>
+                            <li><a href="">Категорії</a></li>
+                            <li><a href="">Доставка та оплата</a></li>
+                            <li><a href="">Гарантія</a></li>
+                            <li><a href="">Про нас</a></li>
+                            <li><a href="">Контакти</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div class="footer_contacts column">
                     <h3>Контакти</h3>

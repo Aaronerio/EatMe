@@ -17,6 +17,10 @@ ul {
     list-style: none;
 }
 
+figure {
+    margin: 0;
+}
+
 .wrapper {
     max-width: 1170px;
     margin: 0 auto;
@@ -261,6 +265,16 @@ ul {
     background-color: white;
 }
 
+.first {
+    padding-right: 50px;
+}
+
+.second,
+.drinks,
+.desert {
+    display: none;
+}
+
 .arrowleft,
 .arrowright {
     display: none;
@@ -355,7 +369,7 @@ ul {
 
 .about {
     background-color: #f1f1f3;
-    padding: 55px 0;
+    padding: 5.5rem 0;
 }
 
 .about h2 {
@@ -443,13 +457,12 @@ ul {
 .reviews {
     background-color: #f1f1f3;
     text-align: center;
-    padding: 65px 0 65px 0;
+    padding: 5rem 0;
 
 }
 
 .reviews h2 {
     font-size: 3.6rem;
-    line-height: 46px;
     color: #151517;
     font-weight: 700;
     font-family: "Roboto Slab";
@@ -469,6 +482,7 @@ ul {
     display: inline-block;
     margin-bottom: 30px;
     position: relative;
+    margin-top: 0;
 }
 
 .comment::after {
@@ -720,6 +734,15 @@ footer h2 {
     justify-content: start;
 }
 
+@media screen and (min-width: 676px) {
+
+    .second,
+    .drinks,
+    .desert {
+        display: inline-block;
+    }
+}
+
 @media screen and (min-width: 768px) {
     html {
         /* font-size: 8.5px; */
@@ -749,6 +772,7 @@ footer h2 {
 }
 
 @media screen and (min-width: 1440px) {
+
     .arrowleft,
     .arrowright {
         display: inline;

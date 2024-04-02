@@ -1,5 +1,6 @@
 html {
     font-size: 8px;
+    scroll-behavior: smooth;
     cursor: url(../images/cursor.cur), default;
 }
 
@@ -98,7 +99,7 @@ img {
 
 .header_info {
     background-color: #151517;
-    padding: 10px 0 10px 0;
+    padding: 10px 0;
 }
 
 .socials img {
@@ -199,7 +200,6 @@ img {
     font-family: "Roboto";
     text-align: right;
     position: relative;
-
 }
 
 .head_menu a:after {
@@ -240,7 +240,7 @@ img {
 
 .soup p {
     font-size: 1.8rem;
-    line-height: 28px;
+    line-height: 2.8rem;
     color: #ffffff;
     font-weight: 300;
     font-family: "Roboto";
@@ -312,7 +312,7 @@ img {
 
 .advantages {
     text-align: center;
-    padding: 60px 0;
+    padding: 6rem 0;
     column-gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -341,7 +341,7 @@ img {
 .advantages p {
     width: 260px;
     font-size: 1.4rem;
-    line-height: 21px;
+    line-height: 2.1rem;
     color: #878787;
     font-weight: 400;
     font-family: "Roboto";
@@ -371,13 +371,12 @@ img {
 
 .about h2 {
     font-size: 3.6rem;
-    line-height: 46px;
+    line-height: 4.6rem;
     color: #151517;
     font-weight: 700;
     font-family: "Roboto Slab";
     text-align: center;
     margin: 0 0 20px 0;
-
 }
 
 .about p {
@@ -393,7 +392,7 @@ img {
 
 .show_menu {
     text-align: center;
-    padding: 70px 0 60px;
+    padding: 7rem 0 6rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../images/bg_salat.jpg);
@@ -402,13 +401,12 @@ img {
 .show_menu p {
     max-width: 880px;
     font-size: 1.6rem;
-    line-height: 24px;
+    line-height: 2.4rem;
     color: #ffffff;
     font-weight: 300;
     font-family: "Roboto";
     text-align: center;
     margin: 0 auto 30px;
-
 }
 
 .dishes {
@@ -555,12 +553,13 @@ img {
     width: 100%;
     box-sizing: border-box;
     margin-top: -67px;
+    border: none;
 }
 
 .map_info {
     position: absolute;
-    left: 600px;
-    top: 170px;
+    left: calc(50% - 131px);  
+    top: 35px;
     background-color: #151517;
     border-radius: 8px;
     padding: 30px 50px 27px 35px;
@@ -650,6 +649,8 @@ img {
     column-gap: 30px;
     align-items: flex-start;
     flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
 }
 
 .column {
@@ -755,7 +756,6 @@ footer h2 {
 }
 
 @media screen and (min-width: 768px) {
-
     .hamburger {
         display: none;
     }
@@ -773,8 +773,6 @@ footer h2 {
         flex-direction: row;
         justify-content: space-between;
     }
-
-
 }
 
 @media screen and (min-width: 1200px) {
@@ -786,24 +784,27 @@ footer h2 {
         justify-content: space-between;
     }
 
-    .dishes_wrap {
-        width: 20%;
-    } 
-
     .izha {
         row-gap: 0;
         column-gap: 0;
     }
+
+    .dishes_wrap {
+        width: 20%;
+    } 
+
+    .footer .flex {
+        justify-content: space-between;
+    }
+
+    .socials.flex {
+        justify-content: start;
+    }
 }
 
 @media screen and (min-width: 1440px) {
-
     .arrowleft,
     .arrowright {
         display: inline;
     }
-}
-
-@media screen and (min-width: 1920px) {
-
 }
